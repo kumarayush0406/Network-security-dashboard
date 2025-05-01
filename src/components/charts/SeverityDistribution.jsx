@@ -1,9 +1,7 @@
-// src/components/charts/SeverityDistribution.jsx
 import Plot from "react-plotly.js";
 
 const SeverityDistribution = ({ data }) => {
   const severityCounts = data.reduce((counts, entry) => {
-    // Add null checks for nested properties
     const severity = entry?.alert?.severity;
     if (typeof severity !== "undefined") {
       counts[severity] = (counts[severity] || 0) + 1;

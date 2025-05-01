@@ -1,4 +1,3 @@
-// Add this at the top:
 import rawData from "./components/data/alerts.json";
 import { useEffect, useState } from "react";
 import AlertTimeline from "./components/charts/AlertTimeline";
